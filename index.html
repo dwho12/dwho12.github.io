@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Congrats on Your First Week!</title>
   <style>
     body {
@@ -13,42 +14,69 @@
       justify-content: center;
       min-height: 150vh;
       margin: 0;
+      padding: 20px;
     }
     .card {
       background: #fff;
       border-radius: 18px;
-      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.09);
+      box-shadow: 0 4px 24px rgba(0,0,0,0.09);
       padding: 32px 40px;
       text-align: center;
       max-width: 450px;
+      width: 100%;
+      box-sizing: border-box;
     }
     h1 {
       color: #e75480;
       margin-bottom: 0.5em;
+      font-size: 2.5rem;
     }
     p {
       color: #444;
       font-size: 1.2em;
       margin-bottom: 1.5em;
       text-align: justify;
+      line-height: 1.6;
     }
     .audio-player {
       margin-top: 20px;
+    }
+    /* Highlighted Spanish quote */
+    .highlight {
+      background-color: #ffe6f2;
+      font-weight: bold;
+      color: #e75480;
+    }
+    /* Indent for essay style */
+    .indented {
+      text-indent: 2em;
+    }
+
+    /* Responsive styles for smaller screens */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1.4em; /* larger text for readability */
+        padding: 0 10px;
+      }
+      .card {
+        padding: 24px 20px;
+      }
     }
   </style>
 </head>
 <body>
   <div class="card">
     <h1>Congrats on Your First Week!</h1>
-    <p style="text-indent: 2em;">
+    <p class="indented">
       I apologize for not having had the opportunity to ask how your day went, especially on the first day of school. The purpose of this message is to at least brighten your day and to express what I truly feel. Now that I have finally gathered the courage to reach out, I want you to know that I am genuinely interested in getting to know you better, all while respecting your pace.
     </p>
 
-    <p style="text-indent: 2em;">
+    <p class="indented">
       Even though I do not have the chance to see you often,  
-      <span style="background-color: #ffe6f2; font-weight: bold; color: #e75480;">
-        Tu esfuerzo no pasa desapercibido.
-      </span>
+      <span class="highlight">Tu esfuerzo no pasa desapercibido.</span>
     </p>
 
     <p>
